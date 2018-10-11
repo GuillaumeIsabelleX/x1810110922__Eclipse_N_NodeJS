@@ -1,0 +1,43 @@
+@startuml 
+
+
+title Chart
+
+
+node E as "
+=Eclipse
+	==
+	=@a
+	..
+	Created a NodeJS project into Eclipse and have executed it
+	__
+	@cr 
+	..
+	MacCaro has Eclipse Mars
+	Downloaded another Eclipse \n\t=> Nodeclipse "Enide 2015" \nfrom https://sourceforge.net/projects/nodeclipse/
+	
+	__
+	
+	
+"
+note left of E {
+	@v Optimal NodeJS Development Environment
+}
+
+node NE as "
+	=NodeEclipse
+	==
+	==@v
+	..
+	@v Have evaluated if NodeEclipse a good choice to realize the value desired in the SCDE.NodeJS
+	==@a
+	..
+	
+	__
+	==@cr
+
+"
+
+E-down->NE : Evaluate\nthe\nIDE\nPlugIn
+
+@enduml
