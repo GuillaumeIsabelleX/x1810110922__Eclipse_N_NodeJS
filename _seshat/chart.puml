@@ -1,7 +1,7 @@
 @startuml 
 
 
-title Chart
+title Charting Overview
 
 
 node E as "
@@ -25,11 +25,12 @@ note left of E {
 }
 
 node NE as "
-	=NodeEclipse
+	=NodeEclipse 
+	ns:SCDE.NodeJS
 	==
 	==@v
 	..
-	@v Have evaluated if NodeEclipse a good choice to realize the value desired in the SCDE.NodeJS
+	@v Have evaluated \n\t\tif NodeEclipse a good choice \n\t\tto: realize the value desired in the SCDE.NodeJS
 	==@a
 	..
 	
@@ -37,7 +38,79 @@ node NE as "
 	==@cr
 
 "
+node X as "
+=ExpressJS
+"
+node TE as "
+=Template Engine
+==
+@w What is that?
+..
+
+"
+
+NE-down->X : has Express \nProject template
+
+NE-left->TE : @cr has Template Engine\nwhen you create a project
+
+node XTE as "
+=ExpressJS Template Engine
+==
+@v Optimal Templating Engine for NodeJS
+__
+@cr
+..
+NodeEclipse has template engine
+* JADE, 
+* EJS, JSHTML, HOGAN.js
+--
+=StyleSheet Engine
+..
+=Choice:
+CSS
+LESS
+Stylus
+"
+node SSE as "
+=StyleSheet Engine
+__
+=Choice:
+CSS
+LESS
+Stylus
+"
+XTE-down->SSE : you can choose which engine
+
+interface XTEC as "
+
+Choice
+ of
+ Template
+"
+
+X-up-o TE : has
+TE-left->XTE : Templating Engine Choice
+XTE-left->XTEC
+
+node jade as "
+=jade
+"
+node ejs as "
+=EJS
+"
+node jshtml as "
+=JSHTML
+"
+node hogan as "
+=HOGAN.js
+"
+
+XTEC-up-o jade
+XTEC-left-o ejs
+XTEC-left-o jshtml
+XTEC-down-o hogan
 
 E-down->NE : Evaluate\nthe\nIDE\nPlugIn
+
 
 @enduml

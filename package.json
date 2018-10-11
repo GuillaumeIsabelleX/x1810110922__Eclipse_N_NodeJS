@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/GuillaumeIsabelleX/x1810110922__Eclipse_N_NodeJS/issues"
   },
-  "homepage": "https://github.com/GuillaumeIsabelleX/x1810110922__Eclipse_N_NodeJS#readme"
+  "homepage": "https://github.com/GuillaumeIsabelleX/x1810110922__Eclipse_N_NodeJS#readme",
+  "dependencies": {
+    "jshint": "^2.9.6"
+  }
 }
