@@ -1,0 +1,14 @@
+# Enide Maven
+
+## Nodeclipse/Enide Maven for Eclipse
+@urir [https://marketplace.eclipse.org/content/nodeclipseenide-maven-eclipse]
+
+
+Launch build, execute Java class, run Jetty or Tomcat6 by right-clicking pom.xml (or pom2.xml). 
+
+Project does not need to be Maven project. Just pom.xml would be enough. (The project may be General, old classic Java, broken Maven, Gradle or Eclipse plugin project with tycho.) Maven plugin (from Enide Studio 2014) is alternative and completion to m2e (Maven Eclipse Integration). No miracles, this plugins just launches mvn with options, as you can do from command line. Path to maven HOME is used, so you can try different versions. Specify options to mvn (including JVM options) that will be Workspace-wide. Executed string is shown is Console, so you can check and learn. This plugins has JDT dependency. This plugins does no background jobs. It does not store 600MB in ~\.m2\repository\.cache\m2e per every its own version. It only calls maven to do the job. While it cannot be as good as m2e (Maven Eclipse Integration), there are some use cases when it will be quite useful. And whether you need it often or not, your Eclipse IDE will stay as fast as it was before installing this plugin. Use case 1 Taking a look at an open source project - clone it - import as General project (e.g. Alt+Shift+N File -> New -> Project... General / Project ) - launch build - start exploring files without waiting build - when build finishes execute `mvn eclipse:eclipse` or use m2e File -> Import m2e by default launches build and blocks whole Eclipse workspace until build finishes. http://eclip.se/427762 Hints: - you can re-run build by selecting it from Run drop-down menu on main toolbar, as well as add to Favorites. - use grep-console plugin - you can type in Console while build is executed, and latter search for that text - use Ctrl+Alt+E or StartExplorer/Show in File Manager, or Ctrl+Alt+D or StartExplorer/Start Shell Here, - use EditBox for block color highlight - if for some reason you can't or don't want to install m2e (for example you just need to have a quick look on a project), you can mvn eclipse:eclipse and import as existing project. (m2e on the contrary requires to do in Eclipse File -> Import -> Maven -> Existing Maven Project) New in version 0.12: - #124 Preference option to "pass all environment variables of Eclipse to launched Node.js app" (for Node.js, Maven, Gradle) New in version 0.11: - start Tomcat 6 or Jetty using maven (your pom.xml should have plugins configured) See Gradle for similar lightweight, non-intrusive plugin. Have you seen Moonrise UI theme plugin? It is now TOP12 plugin. UPDATE: Jeeeyul's Eclipse Themes since 2.0 also includes black theme. https://github.com/jeeeyul/eclipse-themes/wiki/Using-Black-Theme Listed in Nodeclipse Plugins List.
+
+Categories:
+Build and Deploy, Editor, Tools
+Tags:
+maven, java, JDT, run, build, tomcat, jetty
