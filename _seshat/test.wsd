@@ -1,0 +1,11 @@
+@startuml 
+
+
+title Chart test WSD
+
+actor Charter
+
+
+
+
+@enduml
