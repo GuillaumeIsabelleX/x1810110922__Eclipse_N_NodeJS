@@ -1,0 +1,2 @@
+# @x 1810111012 Explore Emmet
+Emmet (ex-Zen Coding) is an editor plugin for high-speed HTML, XML, XSL (or any other structured code format) coding and editing. The core of this plugin is a powerful abbreviation engine which allows you to expand expressions—similar to CSS selectors—into HTML code.
